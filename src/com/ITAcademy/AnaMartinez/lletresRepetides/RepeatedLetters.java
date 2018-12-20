@@ -16,15 +16,7 @@ public class RepeatedLetters {
         }
 
         ArrayList<Character> surnameList = new ArrayList<>();
-        surnameList.add('M');
-        surnameList.add('a');
-        surnameList.add('r');
-        surnameList.add('t');
-        surnameList.add('i');
-        surnameList.add('n');
-        surnameList.add('e');
-        surnameList.add('z');
-
+        Collections.addAll(surnameList,'M','a','r','t','i','n','e','z');
 
         int option = 0;
         boolean exit = false;
@@ -74,13 +66,10 @@ public class RepeatedLetters {
 
         ArrayList<Character> fullName = new ArrayList<>();
         //init of fullName copying the other two lists
-        for(char letter : nameList) {
-            fullName.add(letter);
-        }
+        fullName.addAll(nameList);
         fullName.add(' ');
-        for(char letter : surnameList){
-            fullName.add(letter);
-        }
+        fullName.addAll(surnameList);
+
         //printout of the full name
         System.out.println("You have selected to printout the full name: ");
         for(char letter : fullName){
