@@ -42,7 +42,8 @@ public class RepeatedLetters {
         String input;
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("You have selected to enter a new name and surname to evaluate: ");
+        System.out.println("You have selected to enter a new name and surname to evaluate. ");
+        System.out.println("You will be requested to enter the name first, then the surname: ");
         System.out.println("Enter the new name: ");
         input = sc.nextLine();
         char[] inputInChar = input.toCharArray();
@@ -70,12 +71,14 @@ public class RepeatedLetters {
         fullName.add(' ');
         fullName.addAll(surnameList);
 
-        //printout of the full name
-        System.out.println("You have selected to printout the full name: ");
+        // default printout of the full name
+        System.out.println(fullName);
+        // propietary printout of the full name
+/*        System.out.println("You have selected to printout the full name: ");
         for(char letter : fullName){
             System.out.print(letter);
         }
-        System.out.println();
+        System.out.println();*/
     }
 
     /*
