@@ -111,12 +111,8 @@ public class RepeatedLetters {
     }
 
     private static boolean isVowel(char letter) {
-        return (letter == 'a')
-                || (letter == 'e')
-                || (letter == 'i')
-                || (letter == 'o')
-                || (letter == 'u')
-                || (letter == 'A')
+        letter= Character.toUpperCase(letter);
+        return (letter == 'A')
                 || (letter == 'E')
                 || (letter == 'I')
                 || (letter == 'O')
